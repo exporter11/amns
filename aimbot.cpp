@@ -32,11 +32,6 @@ bool caimbot::do_aimbot(cbase_player* p_local, i_entity_list* p_entitylist, CUse
 	if (!p_target)
 		return false;
 
-
-	i_client_unknown* icunk = p_entitylist->get_client_unknown_from_handle(p_target->m_hObserverTarget);
-
-	std::cout << icunk << '\n';
-
 	QAngle angle_to_enemy;
 	angle_to_enemy.angle_from_vector((p_target->m_vecOrigin + p_target->m_vecViewOffset) - (p_local->m_vecOrigin + p_local->m_vecViewOffset));
 
