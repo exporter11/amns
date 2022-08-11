@@ -71,27 +71,12 @@ public:
 	char pad_35D6[6818]; //0x35D6
 };
 
-class i_client_renderable {
-	bool	SetupBones(matrix3_4* pBoneToWorldOut, int nMaxBones, int boneMask, float currentTime);
-};
-class i_client_unknown : public cbase_player
-{
-	virtual void* GetCollideable() = 0;
-	virtual void* GetClientNetworkable() = 0;
-	virtual i_client_renderable* GetClientRenderable() = 0;
-	virtual void* GetIClientEntity() = 0;
-	virtual void* GetBaseEntity() = 0;
-	virtual void* GetClientThinkable() = 0;
-	virtual void* GetClientAlphaProperty() = 0;
-};
-
-
 class i_entity_list
 {
 public:
 	virtual void* get_client_net(int entnum) = 0;
 	virtual void* get_client_net_from_handle(void* hEnt) = 0;
-	virtual i_client_unknown* get_client_unknown_from_handle(int* hEnt) = 0;
+	virtual void* get_client_unknown_from_handle(void* hEnt) = 0;
 	virtual cbase_player* get_client_entity(int entnum) = 0;
 };
 
