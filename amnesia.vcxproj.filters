@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{3fe01cdc-96e9-4f53-98fc-e556c202436a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\hook">
+      <UniqueIdentifier>{3ffc1ceb-b9e8-4b1d-ab1b-30d7ffe4382e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\interfaces">
+      <UniqueIdentifier>{c56ac0e8-5063-42bc-848a-273da4c01aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{02e41209-4bb0-4989-aa7f-b0d0ce47c0fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\aimbot">
+      <UniqueIdentifier>{83d86b5c-05f2-441e-9a50-fabcd6265818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\misc">
+      <UniqueIdentifier>{a6703cfc-0ab9-4054-8fd7-4e8b2e44ace5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\math">
+      <UniqueIdentifier>{0b56f656-7e87-4ef0-86ba-208d4f70533f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.cpp">
+      <Filter>SDK\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="chl_client.cpp">
+      <Filter>SDK\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="i_engine_client.cpp">
+      <Filter>SDK\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="aimbot.cpp">
+      <Filter>features\aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="QAngle.cpp">
+      <Filter>SDK\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>SDK\math</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>SDK\interfaces</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hook.h">
+      <Filter>SDK\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="interfaces.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="i_engine_client.h">
+      <Filter>SDK\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="chl_client.h">
+      <Filter>SDK\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="i_client_mode.h">
+      <Filter>SDK\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>SDK\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="cusercmd.h">
+      <Filter>SDK\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="in_buttons.h">
+      <Filter>SDK\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="misc.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="aimbot.h">
+      <Filter>features\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="QAngle.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>SDK\math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
